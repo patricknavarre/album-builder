@@ -17,7 +17,7 @@ const imageItem = (url, caption) => {
   const newPtag = document.createElement("p");
   newPtag.innerText = caption;
   const deleteButton = document.createElement("button");
-  deleteButton.innerText = "delete";
+  deleteButton.innerText = "Delete";
   imageBox.appendChild(newImage);
   imageBox.appendChild(newPtag);
   imageBox.appendChild(deleteButton);

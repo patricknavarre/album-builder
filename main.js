@@ -1,10 +1,13 @@
-// save the url and caption as properties in an object
-const albumObj = {url: "urlGoesHere", caption: "captionGoesHere..."}
-// save that object in an array
+// // save the url and caption as properties in an object
+const albumObj = {"url": "url", "caption": "caption"} 
+// // save that object in an array
 const albumArr = [albumObj]
-// save that array as JSON in localStorage
-localStorage[albumObj] = JSON.stringify(albumObj);
-// add a global array that you can .push to
+// // save that array as JSON in localStorage
+localStorage.setItem("albumObj", JSON.stringify(albumObj));
+// // add a global array that you can .push to
+JSON.parse(localStorage.getItem("albumObj"))
+console.log(albumArr[0])
+const savedAlbumArr = []
 
 
 

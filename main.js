@@ -1,3 +1,4 @@
+
 // // save the url and caption as properties in an object
 const albumObj = {"url": "url", "caption": "caption"} 
 // // save that object in an array

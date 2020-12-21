@@ -1,10 +1,10 @@
 #header {
   display: flex;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 80%;
   height: 40px;
   margin: 20px auto;
-  background-image: url(https://img2.goodfon.com/wallpaper/nbig/0/aa/red-texture-backgrounds-fon.jpg);
+  background-color: rgb(72, 72, 72);
   align-items: center;
   justify-content: center;
   color: white;
@@ -13,7 +13,8 @@
 
 body {
   display: grid;
-  background-image: url(https://cdn.shopify.com/s/files/1/0170/2948/products/Ebony-3n1-72dpi_1024x1024.jpg?v=1402110640);
+  /* background-image: url(https://cdn.shopify.com/s/files/1/0170/2948/products/Ebony-3n1-72dpi_1024x1024.jpg?v=1402110640); */
+  background-image: url(https://wallpapercave.com/wp/wp2857108.jpg);
   margin: 2%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border: 2px solid black;
@@ -34,7 +35,7 @@ body {
 
 .submit-button {
   border-radius: 8px;
-  background-color: rgba(81, 104, 65, 0.742);
+  background-color: rgba(65, 104, 103, 0.742);
   border: none;
   color: white;
   padding: 10px 32px;
@@ -72,7 +73,7 @@ body {
 
 button {
   border-radius: 8px;
-  background-color: rgb(72, 74, 70);
+  background-color: rgba(43, 81, 138, 0.947);
   border: 1px solid black;
   color: white;
   padding: 10px 20px;
@@ -87,7 +88,7 @@ button:hover {
   box-shadow: 0px 1px 2px 1px black;
   outline: none;
   cursor: pointer;
-  color: gray;
+  color: lightgray;
 }
 
 
@@ -137,18 +138,18 @@ img:hover {
 p {
   font-size: larger;
   text-align: center;
-  background-color: rgba(81, 104, 65, 0.742);
+  background-color: rgba(65, 97, 104, 0.742);
   color: whitesmoke;
 }
 
 #content {
-  background-image: url(https://img2.goodfon.com/wallpaper/nbig/0/aa/red-texture-backgrounds-fon.jpg);
+  background-color: rgb(72, 72, 72);
   width: 60%;
   color: whitesmoke;
   margin: auto;
   padding: 2px 2px 2px 2px;
   font-size: 18px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 @media (min-width: 700px) and (max-width: 1100px) {

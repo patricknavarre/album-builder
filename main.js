@@ -1,13 +1,6 @@
 const data = JSON.parse(localStorage.getItem("albumData")) || [];
 
-// // save the url and caption as properties in an object
-const fakeImage = {"url": "https://images.unsplash.com/photo-1608496283202-86a45c6e3cef?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60", "caption": "TESTING TESTING"} 
-
-data.push(fakeImage)
-// // save that array as JSON in localStorage
-
-
-
+const fakeImage = {"url": "", "caption": ""} 
 
 const imageItem = (url, caption) => {
   const album = document.querySelector(".album");

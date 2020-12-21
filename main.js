@@ -1,14 +1,11 @@
+const data = JSON.parse(localStorage.getItem("albumData")) || [];
 
 // // save the url and caption as properties in an object
-const albumObj = {"url": "url", "caption": "caption"} 
-// // save that object in an array
-const albumArr = [albumObj]
+const fakeImage = {"url": "https://images.unsplash.com/photo-1608496283202-86a45c6e3cef?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60", "caption": "TESTING TESTING"} 
+
+data.push(fakeImage)
 // // save that array as JSON in localStorage
-localStorage.setItem("albumObj", JSON.stringify(albumObj));
-// // add a global array that you can .push to
-JSON.parse(localStorage.getItem("albumObj"))
-console.log(albumArr[0])
-const savedAlbumArr = []
+
 
 
 
@@ -33,12 +30,18 @@ const imageItem = (url, caption) => {
 };
 
 const submitButton = document.querySelector(".submit-button");
-const deleteButton = document.querySelector(".delete-button");
 
 const submitButtonClicked = () => {
   const imageInput = document.querySelector("#image-input").value;
   const captionInput = document.querySelector("#caption-input").value;
+  const image = {"url": imageInput, "caption": captionInput};
+  data.push(image);
+  localStorage.setItem("albumData", JSON.stringify(data));
   imageItem(imageInput, captionInput);
 };
+
+for (item of data) {
+  imageItem(item.url, item.caption)
+}
 
 submitButton.addEventListener("click", submitButtonClicked);

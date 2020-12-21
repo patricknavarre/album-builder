@@ -4,7 +4,7 @@
   width: 80%;
   height: 40px;
   margin: 20px auto;
-  background-color: rgb(72, 72, 72);
+  background: linear-gradient(to right,rgba(94, 94, 94, 0.208),rgb(72, 72, 72));
   align-items: center;
   justify-content: center;
   color: white;
@@ -13,7 +13,6 @@
 
 body {
   display: grid;
-  /* background-image: url(https://cdn.shopify.com/s/files/1/0170/2948/products/Ebony-3n1-72dpi_1024x1024.jpg?v=1402110640); */
   background-image: url(https://wallpapercave.com/wp/wp2857108.jpg);
   margin: 2%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -29,16 +28,16 @@ body {
   color: #ffffff;
   text-align: center;
   font-size: 15px;
-  width: 80%;
+  width: 90%;
   border-radius: 10px;
 }
 
 .submit-button {
   border-radius: 8px;
-  background-color: rgba(65, 104, 103, 0.742);
+  background-color: rgba(80, 125, 123, 0.742);
   border: none;
   color: white;
-  padding: 10px 32px;
+  padding: 10px 28px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -52,9 +51,6 @@ body {
   cursor: pointer;
 }
 
-.submit-button:checked{
-    box-shadow: none;
-}
 
 .user-input {
   display: flex;
@@ -73,7 +69,7 @@ body {
 
 button {
   border-radius: 8px;
-  background-color: rgba(43, 81, 138, 0.947);
+  background-color: rgba(65, 104, 103, 0.742);
   border: 1px solid black;
   color: white;
   padding: 10px 20px;
@@ -90,7 +86,6 @@ button:hover {
   cursor: pointer;
   color: lightgray;
 }
-
 
 #caption-input:focus {
   outline: none;
@@ -143,7 +138,7 @@ p {
 }
 
 #content {
-  background-color: rgb(72, 72, 72);
+  background: linear-gradient(to right,rgba(94, 94, 94, 0.208),rgb(72, 72, 72));
   width: 60%;
   color: whitesmoke;
   margin: auto;
